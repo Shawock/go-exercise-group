@@ -8,12 +8,12 @@ type defaultMatcherV2 struct {
 }
 
 // 使用值作为接收者声明的方法，在接口类型的值为值或者指针时，都可以被调用。不懂？ TODO
-func (m defaultMatcher) Search(feed *Feed, searchTerm string) ([] *Result, error) {
+func (m defaultMatcher) Search(feed *Feed, searchTerm string) ([]*Result, error) {
 	return nil, nil
 }
 
 // 使用指针作为接收者声明的方法，只能在接口类型的值是一个指针的时候被调用。不懂？ TODO
-func (m *defaultMatcherV2) Search(feed *Feed, searchTerm string) ([] *Result, error) {
+func (m *defaultMatcherV2) Search(feed *Feed, searchTerm string) ([]*Result, error) {
 	panic("implement me")
 }
 

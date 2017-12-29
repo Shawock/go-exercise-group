@@ -1,8 +1,8 @@
 package search
 
 import (
-	"log"
 	"fmt"
+	"log"
 )
 
 type Result struct {
@@ -12,7 +12,7 @@ type Result struct {
 
 // 如果接口类型只包含一个方法，那么这个类型的名字以 er 结尾
 type Matcher interface {
-	Search(feed *Feed, searchTerm string) ([] *Result, error)
+	Search(feed *Feed, searchTerm string) ([]*Result, error)
 }
 
 func Match(matcher Matcher, feed *Feed, searchTerm string, results chan<- *Result) {

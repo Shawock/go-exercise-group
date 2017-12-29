@@ -1,8 +1,8 @@
 package search
 
 import (
-	"os"
 	"encoding/json"
+	"os"
 )
 
 const dataFile = "data/data.json"
