@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	_ "fmt" // 下划线让编译器接受这类导入，并且调用对应包内的所有代码文件里定义的 init 函数
 	"log"
 	"os"
+	"github.com/shawock/go-exercise-group/go-in-action/chapter5"
 )
 
 func init() {
@@ -15,7 +15,20 @@ func init() {
 func main() {
 	log.Println("application start successfully.")
 	log.Println(length("hello shawock"))
-	fmt.Printf("The quick brown fox jumped over lazy dogs", 3.14)
+
+	counter := chapter5.AlertCounter(10)
+	log.Println(counter)
+
+	counter1 := chapter5.New(100)
+	log.Printf("counter1's type = %T\n", counter1)
+
+	admin := chapter5.AdminV2{Right: 3}
+	log.Printf("%v\n", admin)
+
+	admin.Name = "Shawock"
+	admin.Email = "zhouhao@google.com"
+	log.Printf("%+v\n", admin)
+	log.Printf("%p\n", &admin)
 }
 
 func length(str string) int {

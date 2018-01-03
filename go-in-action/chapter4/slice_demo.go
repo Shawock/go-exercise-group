@@ -66,7 +66,7 @@ func main() {
 	}
 
 	// 传统 for 循环
-	for index := 0; index < len(slice1011); index ++ {
+	for index := 0; index < len(slice1011); index++ {
 		fmt.Printf("index = %d, value = %d\n", index, slice1011[index])
 	}
 
