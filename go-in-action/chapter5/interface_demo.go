@@ -53,3 +53,15 @@ func interfaceDemo() {
 	//下面这个无法运行时拿到指针? TODO
 	//duration(123).pretty()
 }
+
+type Reader interface {
+	Read(p []byte) (int, error)
+}
+
+type Writer interface {
+	Write(p []byte) (n int, err error)
+}
+
+type Closer interface {
+	Close() (err error)
+}

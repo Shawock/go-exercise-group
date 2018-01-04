@@ -2,9 +2,9 @@ package main
 
 import (
 	_ "fmt" // 下划线让编译器接受这类导入，并且调用对应包内的所有代码文件里定义的 init 函数
+	"github.com/shawock/go-exercise-group/go-in-action/chapter5"
 	"log"
 	"os"
-	"github.com/shawock/go-exercise-group/go-in-action/chapter5"
 )
 
 func init() {
@@ -29,6 +29,9 @@ func main() {
 	admin.Email = "zhouhao@google.com"
 	log.Printf("%+v\n", admin)
 	log.Printf("%p\n", &admin)
+
+	b := byte(1)
+	log.Printf("%T\n", b)
 }
 
 func length(str string) int {
