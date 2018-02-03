@@ -2,7 +2,7 @@ package main
 
 import (
 	_ "fmt" // 下划线让编译器接受这类导入，并且调用对应包内的所有代码文件里定义的 init 函数
-	"github.com/shawock/go-exercise-group/go-in-action/chapter5"
+	"github.com/shawock/go-exercise-group/go_in_action/chapter5"
 	"log"
 	"os"
 )
