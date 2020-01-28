@@ -34,4 +34,4 @@ run golang hello world
 - 5.4.3 关于方法集也不是很懂
 
 ## 参考
-- [Go by Example](https://gobyexample.com/)
+- [Go by Example](https://gobyexample.com)
