@@ -35,3 +35,5 @@ run golang hello world
 
 ## 参考
 - [Go by Example](https://gobyexample.com)
+
+## 冲突演示2
